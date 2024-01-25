@@ -28,6 +28,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 'c':
 				printf("%c", va_arg(spc, int));
+				check_stat = 0;
 				break;
 			case 's':
 				str = va_arg(spc, char *);
